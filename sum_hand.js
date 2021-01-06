@@ -3,7 +3,7 @@ function sumHand (hand) {
     let sum;
     for(let i = 0; i < hand.length; i++)
     {
-      sum = hand[i] + hand[i+1]
+      sum += hand[i]
     }
     return sum
 } 
