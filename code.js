@@ -82,20 +82,4 @@ function deal_cards () {
     dealer_hand.push(card)
   }
 }
-// the sum of cards in the player's hand
-function sum_player_hand(hand)
-{
-  for(let i = 0; i < hand.length; i++)
-  {
-    let sum = hand[i] + hand[i+1]
-  }
-}
 
-// the sum of cards in the dealer's hand
-function sum_dealer_hand(hand)
-{
-  for(let i = 0; i < hand.length; i++)
-  {
-    let sum = hand[i] + hand[i+1]
-  }
-}
