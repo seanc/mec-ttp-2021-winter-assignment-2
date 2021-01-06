@@ -1,5 +1,11 @@
-function determine_outcome (hand) {
+import sumHand from "./sum_hand"
 
+function determineOutcome (player_hand, dealer_hand) {
+  if (sumHand(dealer_hand) > sumHand(player_hand)) {
+    console.log('YOU LOSE')
+  } else {
+    console.log('YOU WON')
+  }
 }
 
-export default determine_outcome
+export default determineOutcome

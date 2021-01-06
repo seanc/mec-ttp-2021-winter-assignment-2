@@ -1,4 +1,7 @@
 /*
+
+  --- WE ARE NOT USING THIS FILE ANYMORE, THIS FILE IS JUST FOR REFERENCE ---
+
   MEC TTP 2021 Winter Assignment 2: Blackjack Game Engine
 
   Use this js file to write your project outline and your core game logic.
@@ -44,10 +47,9 @@
     dealer_hand : Array
     player_hand : Array
 
-    deal_cards(){}
-    sum_player_hand(hand){}
-    sum_dealer_hand(hand){}
-    determine_outcome(){}
+    - deal_cards(deck, hand){} : Takes deck, randomly removes 2 items, adds it to hand, returns deck and hand in Array 
+    - sum_hand(){}
+    - determine_outcome(){}
     start()
     reset(){}
     hit() {}
@@ -60,6 +62,16 @@
       -> display sum to player so they can decide
          whether to hit or stand
     
+    hit(deck, hand)
+      -> randomly take card from deck
+      -> add card to hand
+      -> determine_outcome()
+
+    stand(hand)
+      -> determine_outcome()
+      -> returns sum of hand
+
+    
 
 
     sum_hand(dealer_hand) >= sum_hand(player_hand)
@@ -67,6 +79,7 @@
 
  let deck_of_cards = [1,2,3,4,5,6,7,8,9,10]
  let dealer_hand = []
+ let player_hand = []
 
 /**
  * Deal 2 cards to the player and the dealer 
