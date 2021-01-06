@@ -53,15 +53,20 @@
     hit() {}
     stand() {}
 
-    sum_hand(dealer_hand) >= sum_hand(player_hand)
+  Call order:
+    start()
+      -> deal_cards()
+      -> sum_hand() 
+      -> display sum to player so they can decide
+         whether to hit or stand
     
 
-  
+
+    sum_hand(dealer_hand) >= sum_hand(player_hand)
  */
 
  let deck_of_cards = [1,2,3,4,5,6,7,8,9,10]
  let dealer_hand = []
- let player_hand = []
 
 /**
  * Deal 2 cards to the player and the dealer 
